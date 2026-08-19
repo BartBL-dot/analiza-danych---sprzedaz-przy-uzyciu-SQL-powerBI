@@ -53,25 +53,9 @@ GROUP BY YEAR([Order Date]), MONTH([Order Date])
 ORDER BY Rok, Miesiac;
 
 
--- =====================================================================
--- 4. SPRZEDAŻ I ZYSK W PODZIALE NA REGION -> STATE -> CITY
--- PYTANIE: Które regiony, stany i miasta generują najwyższą sprzedaż
---          i zysk?
--- CEL: Zlokalizować geograficznie najmocniejsze i najsłabsze rynki.
--- =====================================================================
-SELECT 
-    Region,
-    State,
-    City,
-    SUM(Sales)  AS Laczna_Sprzedaz,
-    SUM(Profit) AS Laczny_Zysk
-FROM [dbo].[Sample - Superstore]
-GROUP BY Region, State, City
-ORDER BY Region, Laczna_Sprzedaz DESC;
-
 
 -- =====================================================================
--- 5. TOP 10 KLIENTÓW WG WARTOŚCI SPRZEDAŻY
+-- 4. TOP 10 KLIENTÓW WG WARTOŚCI SPRZEDAŻY
 -- PYTANIE: Którzy klienci generują dla firmy najwyższą wartość?
 -- CEL: Zidentyfikować kluczowych klientów (np. pod kątem programów
 --      lojalnościowych lub priorytetowej obsługi).
@@ -87,7 +71,7 @@ ORDER BY Laczna_Sprzedaz DESC;
 
 
 -- =====================================================================
--- 6. ŚREDNI CZAS DOSTAWY W PODZIALE NA SHIP MODE
+-- 5. ŚREDNI CZAS DOSTAWY W PODZIALE NA SHIP MODE
 -- PYTANIE: Jak długo trwa dostawa w zależności od wybranego trybu
 --          wysyłki?
 -- CEL: Ocenić efektywność logistyczną poszczególnych metod wysyłki.
@@ -101,23 +85,7 @@ GROUP BY [Ship Mode]
 ORDER BY Sredni_Czas_Dostawy_Dni;
 
 
--- =====================================================================
--- 8. STRATA MIMO WYSOKIEJ SPRZEDAŻY (problem z rabatami)
--- PYTANIE: Które zamówienia mają sprzedaż wyższą niż średnia,
---          a mimo to generują stratę?
--- CEL: Wykryć powiązanie wysokich rabatów z ujemnym zyskiem -
---      argument do rewizji polityki rabatowej.
--- =====================================================================
-SELECT 
-    [Order ID],
-    [Product Name],
-    Sales,
-    Discount,
-    Profit
-FROM [dbo].[Sample - Superstore]
-WHERE Profit < 0
-    AND Sales > (SELECT AVG(Sales) FROM [dbo].[Sample - Superstore])
-ORDER BY Discount DESC, Sales DESC;
+
 
 
 -- =====================================================================
