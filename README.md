@@ -54,7 +54,7 @@ FROM [dbo].[Sample - Superstore]
 GROUP BY [Ship Mode]
 ORDER BY Sredni_Czas_Dostawy_Dni;
 ```
-  6. dodatkowe: szukanie duplikatów
+  DODATKOWE: SZUKANIE DUPLIKATÓW
 ```sql
 SELECT 
     [Order ID],
