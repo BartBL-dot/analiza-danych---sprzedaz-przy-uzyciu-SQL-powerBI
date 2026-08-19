@@ -53,4 +53,15 @@ SELECT
 FROM [dbo].[Sample - Superstore]
 GROUP BY [Ship Mode]
 ORDER BY Sredni_Czas_Dostawy_Dni;
-``
+```
+  6. dodatkowe: szukanie duplikatów
+```sql
+SELECT 
+    [Order ID],
+    [Product ID],
+    COUNT(*) AS liczba_wystapien
+FROM [dbo].[Sample - Superstore]
+GROUP BY [Order ID], [Product ID]
+HAVING COUNT(*) > 1
+ORDER BY liczba_wystapien DESC;
+```
