@@ -44,3 +44,13 @@ FROM [dbo].[Sample - Superstore]
 GROUP BY [Customer Name], Segment
 ORDER BY Laczna_Sprzedaz DESC;
 ```
+  5. ŚREDNI CZAS DOSTAWY W PODZIALE NA SHIP MODE
+```sql
+SELECT 
+    [Ship Mode],
+    AVG(DATEDIFF(DAY, [Order Date], [Ship Date])) AS Sredni_Czas_Dostawy_Dni,
+    COUNT(*) AS Liczba_Zamowien
+FROM [dbo].[Sample - Superstore]
+GROUP BY [Ship Mode]
+ORDER BY Sredni_Czas_Dostawy_Dni;
+``
