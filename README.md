@@ -1,1 +1,1 @@
-# analiza-danych---sprzeda-przy-uzyciu-SQL-powerquery-powerBI
+# analiza-danych---sprzedaz-przy-uzyciu-SQL-powerquery-powerBI
