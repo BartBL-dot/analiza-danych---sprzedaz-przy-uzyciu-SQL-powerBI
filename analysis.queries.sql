@@ -30,7 +30,7 @@ SELECT
     [Sub-Category],
     SUM(Sales) AS Laczna_Sprzedaz,
     SUM(Profit) AS Laczny_Zysk,
-    ROUND(SUM(Profit) / NULLIFSUM(Sales),0) * 100, 2) AS Marza_Procent
+    ROUND(SUM(Profit) / NULLIF(SUM(Sales),0) * 100, 2) AS Marza_Procent
 FROM [dbo].[Sample - Superstore]
 GROUP BY [Sub-Category]
 ORDER BY Marza_Procent ASC;
