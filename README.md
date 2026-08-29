@@ -78,10 +78,10 @@ ORDER BY liczba_wystapien DESC;
 ```
 
 
-tworzenie dashboardu z zdobytych danych(zobacz dasboard1.png oraz dashboarrd2.png)
+**tworzenie dashboardu z zdobytych danych(zobacz dasboard1.png oraz dashboarrd2.png)**
 
 
-krótka analiza:
+**krótka analiza:**
 -Trend sprzedaży jest wyraźnie wzrostowy — od ok. 15 tys. w styczniu 2014 do ponad 120 tys. w grudniu 2017, z powtarzającą się sezonowością: sprzedaż systematycznie rośnie pod koniec każdego roku (listopad–grudzień) i spada w styczniu,
 
 -Segment Consumer generuje ponad połowę przychodów firmy (50,56%), Corporate odpowiada za 30,74%, a Home Office to najmniejszy, choć wciąż istotny segment (18,7%),
