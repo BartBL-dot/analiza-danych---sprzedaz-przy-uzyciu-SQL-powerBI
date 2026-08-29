@@ -1,3 +1,6 @@
+baza danych: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+
+
 # analiza-danych---sprzedaz-przy-uzyciu-SQL-powerquery-powerBI
 Analiza danych przy użyciu SQL:
   1. SPRZEDAŻ I ZYSK W PODZIALE NA KATEGORIE I PODKATEGORIE
