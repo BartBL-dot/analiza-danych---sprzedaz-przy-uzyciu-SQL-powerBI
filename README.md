@@ -74,3 +74,18 @@ HAVING COUNT(*) > 1
 ORDER BY liczba_wystapien DESC;
 ```
 
+
+tworzenie dashboardu z zdobytych danych(zobacz dasboard1.png oraz dashboarrd2.png)
+
+
+krótka analiza:
+-Trend sprzedaży jest wyraźnie wzrostowy — od ok. 15 tys. w styczniu 2014 do ponad 120 tys. w grudniu 2017, z powtarzającą się sezonowością: sprzedaż systematycznie rośnie pod koniec każdego roku (listopad–grudzień) i spada w styczniu,
+
+-Segment Consumer generuje ponad połowę przychodów firmy (50,56%), Corporate odpowiada za 30,74%, a Home Office to najmniejszy, choć wciąż istotny segment (18,7%),
+
+-Nie wszystkie kategorie są jednakowo opłacalne mimo wysokiej sprzedaży — podkategoria "Tables" mimo sprzedaży rzędu 207 tys. generuje ujemny zysk (ok. -18 tys.),
+
+-"Phones" i "Chairs" to najsilniejsze linie produktowe pod względem sprzedaży (330 tys. i 328 tys.), a mimo to ich marże pozostają umiarkowane względem wolumenu,
+
+-10 kluczowych klientów (z pośród 793) odpowiada za nieproporcjonalnie dużą część przychodów — 6,68%.
+
