@@ -20,6 +20,7 @@ GROUP BY Category, [Sub-Category]
 ORDER BY Category, Laczna_Sprzedaz DESC;
 
 
+
 -- =====================================================================
 -- 2. MARŻA ZYSKU (%) W PODZIALE NA SUB-CATEGORY
 -- PYTANIE: Które podkategorie mają najniższą (lub ujemną) marżę zysku?
@@ -34,6 +35,7 @@ SELECT
 FROM [dbo].[Sample - Superstore]
 GROUP BY [Sub-Category]
 ORDER BY Marza_Procent ASC;
+
 -- NULLIF zabezpiecza przed dzieleniem przez 0
 
 
@@ -70,6 +72,7 @@ GROUP BY [Customer Name], Segment
 ORDER BY Laczna_Sprzedaz DESC;
 
 
+
 -- =====================================================================
 -- 5. ŚREDNI CZAS DOSTAWY W PODZIALE NA SHIP MODE
 -- PYTANIE: Jak długo trwa dostawa w zależności od wybranego trybu
@@ -85,6 +88,17 @@ GROUP BY [Ship Mode]
 ORDER BY Sredni_Czas_Dostawy_Dni;
 
 
+
+-- =====================================================================
+-- 6. SPRZEDAŻ WEDŁUG SEGMENTU
+-- PYTANIE: Jak wygląda różnica sprzedaży międdzy segmentami?
+-- CEL: Dodatkowy insight w ramach danych pomocniczych.
+-- =====================================================================
+SELECT
+	segment,
+	sum(sales) AS laczna_sprzedaz
+FROM [dbo].[Sample - Superstore]
+GROUP BY Segment;
 
 
 
