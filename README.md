@@ -73,3 +73,4 @@ GROUP BY [Order ID], [Product ID]
 HAVING COUNT(*) > 1
 ORDER BY liczba_wystapien DESC;
 ```
+
