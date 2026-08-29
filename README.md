@@ -78,7 +78,7 @@ ORDER BY liczba_wystapien DESC;
 ```
 
 
-**tworzenie dashboardu z zdobytych danych(zobacz ![Dashboard - strona 1](dashboard1.png))**
+**tworzenie dashboardu z zdobytych danych ![Dashboard - strona 1](dashboard1.png)**
 
 
 **krótka analiza:**
