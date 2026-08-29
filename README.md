@@ -54,6 +54,8 @@ FROM [dbo].[Sample - Superstore]
 GROUP BY [Ship Mode]
 ORDER BY Sredni_Czas_Dostawy_Dni;
 ```
+  6. SPRZEDAŻ WEDŁUG SEGMENTU
+```sql
   DODATKOWE: SZUKANIE DUPLIKATÓW
 ```sql
 SELECT 
