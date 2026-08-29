@@ -56,14 +56,14 @@ ORDER BY Sredni_Czas_Dostawy_Dni;
 ```
   6. SPRZEDAŻ WEDŁUG SEGMENTU
 ```sql
-  DODATKOWE: SZUKANIE DUPLIKATÓW
-```sql
 SELECT
 	segment,
 	sum(sales) AS laczna_sprzedaz
 FROM [dbo].[Sample - Superstore]
 GROUP BY Segment;
 ```
+ DODATKOWE: SZUKANIE DUPLIKATÓW
+ ```sql
 SELECT 
     [Order ID],
     [Product ID],
